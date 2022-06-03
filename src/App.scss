@@ -1,0 +1,59 @@
+@use "./src/prueba/base";
+@import "~bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+body{
+    background:base.$grey;
+}
+
+p{
+    color:white;
+    text-align: justify;
+}
+
+.Body-Content{
+    height:80vh;
+}
+
+.red-button{
+    background:base.$salmon;
+    color:base.$white;
+    border: 1px solid base.$white;
+    border-radius:4px;
+    padding: 6px 10px;
+    transition:.2s;
+}
+
+.red-button:hover{
+    background:base.$white;
+    color:base.$salmon;
+    transition:.2s;
+}
+
+#tabla-pagos{
+    border-radius:20px;
+}
+
+tr,th,td{
+    border:none;
+}
+
+#editar{
+    color:base.$dark-aqua;
+}
+
+#borrar{
+    color:base.$salmon;
+}
+
+th{
+    color:base.$green-grey;
+}
+
+td{
+    color:base.$grey
+}
+
+tbody{
+    border-top:3px solid base.$grey !important;
+}
